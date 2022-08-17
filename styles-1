@@ -1,0 +1,541 @@
+* {
+  box-sizing: border-box;
+  list-style: none; /*raccourci pour list-style-type + list-style-image + list-type-position*/
+  text-decoration: none; /*retirer le sous-lignage*/
+  font-family: "Manuale", serif; /*police utilisée*/
+}
+
+body,
+html,
+header,
+h1 {
+  margin: 0px;
+  padding: 0px;
+}
+
+body,
+html,
+header {
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  background: url(../img/image-1-modif.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  color: rgb(13, 107, 124);
+  font-size: 4em;
+  text-align: center;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+#button-1 {
+  width: 15em;
+  height: 4em;
+}
+
+/* --------------------------------*/
+/* MENU DE NAVIGATION */
+/* --------------------------------*/
+
+.nav-list {
+  margin: 0;
+  padding: 0.2em 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row;
+  /*background-color: rgb(18, 18, 18);*/
+  /*background-color: rgb(17, 24, 50);*/
+  background-color: rgb(13, 107, 124);
+  opacity: 95%;
+  position: fixed; /*menu fixe pdt scrolling */
+  top: 0%; /*position de la nav-list */
+  left: 0%;
+  right: 0%;
+  /* border: 5px solid;
+    border-color: crimson;*/
+}
+
+.nav-item {
+  margin-right: 4em;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: x-large;
+}
+
+.nav-item a {
+  color: white;
+  font-size: 1.8em;
+  /*letter-spacing: 1.2px;*/
+}
+
+.nav-item:first-child {
+  margin-right: auto;
+  margin-left: 2em;
+  max-width: 5%;
+}
+
+/* --------------------------------*/
+/* ACCUEIL */
+/* --------------------------------*/
+
+.container-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 15em;
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  margin-top: 0em;
+  /*border: 5px solid;
+    border-color: crimson;*/
+  gap: 1em;
+}
+
+.item-1-2 {
+  /*changer ici la taille du texte du bouton*/
+}
+
+/* --------------------------------*/
+/* A PROPOS */
+/* --------------------------------*/
+
+.container-2 {
+  display: grid;
+  grid-template-rows: 0.5fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 2em;
+  margin-bottom: 10em;
+}
+
+.item-2-1 {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 5em;
+  align-items: center;
+}
+
+.item-2-2 {
+  margin-left: 35em;
+  margin-top: 2em;
+}
+
+/* Modif taille img 
+
+.item-2-2 > img{
+  width: 60%;
+}
+
+*/
+
+.item-2-3 {
+  margin-right: 15em;
+  margin-top: 0.5em;
+}
+
+/* Bande de séparation */
+
+.split-1 {
+  background-color: rgb(13, 107, 124);
+  height: 5vh;
+}
+
+.split-2 {
+  background-color: white;
+  height: 5vh;
+}
+
+/* --------------------------------*/
+/* MES PROJETS */
+/* --------------------------------*/
+
+.container-3 {
+  display: grid;
+  grid-template-rows: 0.5fr 0.25fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  /*width: 100vw;
+    height: 100vh;*/
+  place-items: center;
+  margin-top: 5em;
+  margin-bottom: 10em;
+}
+
+.item-3-1 {
+  grid-row: 1/2;
+  grid-column: span 4;
+}
+
+.item-3-2 {
+  grid-row: 2/3;
+  grid-column: span 4;
+}
+
+.item-3-3 {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  padding: 4em 4em;
+}
+
+.item-3-3 img:first-child {
+  width: 30rem;
+}
+
+.item-3-4 {
+  grid-row: 3/4;
+  grid-column: 2/3;
+  padding: 4em 4em;
+}
+
+.item-3-4 img:first-child {
+  width: 30rem;
+}
+
+.item-3-5 {
+  grid-row: 3/4;
+  grid-column: 3/4;
+  padding: 4em 4em;
+}
+
+.item-3-5 img:first-child {
+  width: 30rem;
+}
+
+/* --------------------------------*/
+/* MES COMPETENCES */
+/* --------------------------------*/
+
+/* --------------------------------*/
+/* SKILL BAR */
+/* --------------------------------*/
+
+.container-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 1fr 0.5fr;
+  gap: 2em;
+  }
+
+.item-4-1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+    margin-top: 5em;
+  }
+
+  .item-4-7 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-left: 2em;
+    margin-top: -0.9em;
+    /*text-align: center;*/
+  }
+
+.skills-bar{
+  grid-column: 1/2;
+  grid-row: 2/3;
+  /*width: 600px;*/
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px 130px;
+  /*box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);*/
+}
+
+.skills-bar .bar{
+  margin: 20px 0;
+}
+
+.skills-bar .bar:first-child{
+  margin-top: 0px;
+}
+
+.skills-bar .bar .info{
+  margin-bottom: 5px;
+}
+
+.skills-bar .bar .info span{
+  font-size: 1.5em;
+  font-weight: 500;
+}
+
+.skills-bar .bar .progress-line{
+  position: relative;
+  height: 10px;
+  width: 100%;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  box-shadow: inset 0px 1px 1px rgba(0,0,0,0.05),
+                    0px 1px rgba(255, 255, 255, 0.8);
+  animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+.bar .progress-line span{
+  height: 100%;
+  width: 80%;
+  background: rgb(253, 172, 41);
+  position: absolute;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+
+
+@keyframes animate {
+  100%{
+      transform: scaleX(1);
+  }
+}
+
+
+.progress-line.html span{
+  width: 70%; 
+}
+
+.progress-line.css span{
+  width: 50%; 
+}
+
+.progress-line.javascript span{
+  width: 10%; 
+}
+
+.progress-line.php span{
+  width: 0%; 
+}
+
+.progress-line.wordpress span{
+  width: 30%; 
+}
+
+/*.bar .progress-line span::before{
+  position: absolute;
+  content:"";
+  right: 0;
+  top: -10px;
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  opacity: 0;
+  animation: showText 0.5s 1s linear forwards;
+}
+*/
+
+/*@keyframes showText {
+  100%{
+      opacity: 1;
+  }
+}
+
+.bar .progress-line span::after{
+  position: absolute;
+  right: 0;
+  top: -23px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+  background: #000;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line.html span::after{
+  content: "70%"; 
+}
+
+.progress-line.css span::after{
+  content: "50%"; 
+}
+
+.progress-line.javascript span::after{
+  content: "10%"; 
+}
+
+.progress-line.php span::after{
+  content: "0%"; 
+}
+
+.progress-line.wordpress span::after{
+  content: "30%"; 
+}
+*/
+
+
+
+
+
+
+/*
+.container-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 0.2fr);
+  column-gap: 2em;
+  margin-top: 5em;
+  margin-bottom: 10em;
+}
+
+.item-4-1 {
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.item-4-2 {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.item-4-3 {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.item-4-4 {
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.item-4-5 {
+  grid-column: 1/2;
+  grid-row: 5/6;
+}
+
+.item-4-6 {
+  grid-column: 1/2;
+  grid-row: 6/7;
+}
+
+.item-4-7 {
+}
+
+#file {
+}
+
+*/
+
+/* --------------------------------*/
+/* FORMULAIRE DE CONTACT */
+/* --------------------------------*/
+
+.contact {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+
+.container-5 {
+  display: grid;
+  background-color: rgb(13, 107, 124);
+  grid-template-columns: 1fr 1fr;
+  margin: 4em 25em;
+  border-radius: 3em;
+  font-weight: bold;
+  color: rgb(253, 172, 41);
+}
+
+.child-1 {
+  display: grid;
+  padding: 10px 20px;
+  grid-column: 1 / 3;
+  grid-row: 1 / 2;
+}
+
+.child-2 {
+  display: grid;
+  padding: 10px 20px;
+}
+
+.child-3 {
+  display: grid;
+  padding: 10px 20px;
+}
+
+.child-4 {
+  display: grid;
+  padding: 10px 20px;
+}
+
+.child-5 {
+  display: grid;
+  padding: 10px 20px;
+}
+
+.child-8 {
+  display: grid;
+  padding: 10px 20px;
+  grid-column: 1 / 3;
+  grid-row: 5 / 6;
+}
+
+.child-9 {
+  margin: 5px auto;
+  padding: 10px 20px;
+  grid-column: 1 / 3;
+  grid-row: 6 / 7;
+}
+
+.container-6 {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  padding-bottom: 2.25em;
+  /*background-color: rgb(18, 18, 18);*/
+  background-color: rgb(13, 107, 124);
+  color: white;
+}
+
+/*.item-6-2 {
+}*/
+
+
+
+/* MEDIA QUERIES */
+/*
+@media screen and (max-width:1024px) {
+  .container-2 {
+    display: grid;
+    grid-template-rows: 0.25fr 0.1fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 0em;
+    margin-bottom: 0em;
+  }
+  
+  .item-2-1 {
+    grid-row: 1/2;
+    text-align: center;
+    align-items: center;
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  
+  .item-2-2 {
+    grid-row: 2/3;
+    margin-left: 0;
+    align-content: center;
+  }
+  
+  .item-2-3 {
+    grid-row: 3/4;
+  }
+
+}
+*/
